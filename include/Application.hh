@@ -3,4 +3,4 @@
 //   1 = Basic
 //   2 = Trigger
 
-#define Application 2
+#define Application 1
