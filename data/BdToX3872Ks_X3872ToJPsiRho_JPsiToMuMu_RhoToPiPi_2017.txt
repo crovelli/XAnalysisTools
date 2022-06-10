@@ -1,0 +1,1 @@
+/pnfs/roma1.infn.it/data/cms/store/user/crovelli/BdToX3872Ks_X3872ToJPsiRho_JPsiToMuMu_RhoToPiPi_TuneCP5_13TeV-pythia8-evtgen/crab_central_signal_2017/BdToX3872Ks_X3872ToJPsiRho_JPsiToMuMu_RhoToPiPi_2017.root
