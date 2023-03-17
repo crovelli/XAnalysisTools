@@ -31,14 +31,20 @@ OUTLIB	         = $(INCLUDEDIR)/lib/
 $(OUTLIB)XBase.o: $(INCLUDEDIR)/src/XBase.C \
 	$(INCLUDEDIR)/src/X.cc \
 	$(INCLUDEDIR)/src/BasicPlots.cc \
-	$(INCLUDEDIR)/src/Trigger.cc 
+	$(INCLUDEDIR)/src/Selection.cc \
+	$(INCLUDEDIR)/src/Trigger.cc \
+	$(INCLUDEDIR)/src/GenLevelStudy.cc 
 	$(CXX) $(CXXFLAGS) -c -I$(INCLUDEDIR) -o $(OUTLIB)XBase.o $<
 $(OUTLIB)X.o: $(INCLUDEDIR)/src/X.cc 
 	$(CXX) $(CXXFLAGS) -c -I$(INCLUDEDIR) -o $(OUTLIB)X.o $<
 $(OUTLIB)BasicPlots.o: $(INCLUDEDIR)/src/BasicPlots.cc
 	$(CXX) $(CXXFLAGS) -c -I$(INCLUDEDIR) -o $(OUTLIB)BasicPlots.o $<
+$(OUTLIB)Selection.o: $(INCLUDEDIR)/src/Selection.cc
+	$(CXX) $(CXXFLAGS) -c -I$(INCLUDEDIR) -o $(OUTLIB)Selection.o $<
 $(OUTLIB)Trigger.o: $(INCLUDEDIR)/src/Trigger.cc
 	$(CXX) $(CXXFLAGS) -c -I$(INCLUDEDIR) -o $(OUTLIB)Trigger.o $<
+$(OUTLIB)GenLevelStudy.o: $(INCLUDEDIR)/src/GenLevelStudy.cc
+	$(CXX) $(CXXFLAGS) -c -I$(INCLUDEDIR) -o $(OUTLIB)GenLevelStudy.o $<
 
 # ==================== XApp =============================================
 XApp:  $(INCLUDEDIR)/src/XApp.C \

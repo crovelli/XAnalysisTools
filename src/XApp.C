@@ -16,6 +16,12 @@
 #if Application == 2
 #include "./Trigger.cc"
 #endif
+#if Application == 3
+#include "./Selection.cc"
+#endif
+#if Application == 4
+#include "./GenLevelStudy.cc"
+#endif
 
 int main(int argc, char* argv[]) {
 
@@ -71,6 +77,22 @@ int main(int argc, char* argv[]) {
 #if Application == 2
 
   Trigger plots(theChain);
+
+  plots.Loop();
+
+#endif
+
+#if Application == 3
+
+  Selection plots(theChain);
+
+  plots.Loop();
+
+#endif
+
+#if Application == 4
+
+  GenLevelStudy plots(theChain);
 
   plots.Loop();
 
